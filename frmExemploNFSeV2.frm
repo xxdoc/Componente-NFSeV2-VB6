@@ -58,7 +58,6 @@ Begin VB.Form Form1
          _ExtentX        =   16960
          _ExtentY        =   7858
          _Version        =   393217
-         Enabled         =   -1  'True
          TextRTF         =   $"frmExemploNFSeV2.frx":0070
       End
       Begin RichTextLib.RichTextBox mmXML 
@@ -70,7 +69,6 @@ Begin VB.Form Form1
          _ExtentX        =   16960
          _ExtentY        =   7858
          _Version        =   393217
-         Enabled         =   -1  'True
          TextRTF         =   $"frmExemploNFSeV2.frx":00F2
       End
       Begin RichTextLib.RichTextBox mmJSON 
@@ -82,7 +80,6 @@ Begin VB.Form Form1
          _ExtentX        =   16960
          _ExtentY        =   7858
          _Version        =   393217
-         Enabled         =   -1  'True
          TextRTF         =   $"frmExemploNFSeV2.frx":0174
       End
       Begin RichTextLib.RichTextBox mmTipado 
@@ -94,7 +91,6 @@ Begin VB.Form Form1
          _ExtentX        =   16960
          _ExtentY        =   7858
          _Version        =   393217
-         Enabled         =   -1  'True
          TextRTF         =   $"frmExemploNFSeV2.frx":01F6
       End
    End
@@ -924,7 +920,6 @@ Private Sub edtExportarPDF_Click()
 
     vTX2Aux = (cdCarregarTX2.FileName)
     
-    spdNFSe.ExportarImpressaoParaPDF
     spdNFSe.ExportarImpressaoParaPDF mmXML.Text, mmXMLEnvio.Text, App.Path, vTX2Aux
 End Sub
 
